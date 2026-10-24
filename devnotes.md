@@ -18,5 +18,6 @@
 - Debugged two render bugs offscreen with xvfb: label disables blending, and per-vertex fade distance on 200-unit lines.
 - Renamed to spacemouse-test (folder + GitHub repo, private). docs/ untracked and stripped from history; personal logs now in global gitignore.
 - Pitch sign flipped: pulling the puck back now pitches the view up (flight-stick feel).
-- Roll is ignored while horizon lock is on (default); H toggles it.
+- Roll is ignored while horizon lock is on; H toggles it.
 - Added mouse_mode.py (uinput virtual mouse, foreground, Ctrl+C off) and README with screenshot + SVG axis diagram.
+- Horizon lock now defaults off so roll works out of the box (Jon expected roll about the view axis). Verified: roll rotates up 90 deg/s about fwd, fwd unchanged.

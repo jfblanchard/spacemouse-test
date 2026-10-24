@@ -55,7 +55,7 @@ python src/mouse_mode.py        # mouse mode, Ctrl+C to stop
 | Left button | Reset view | Reset view |
 | Right button | Switch to orbit | Switch to fly |
 
-Keys: `R` reset, `M` fly/orbit, `H` horizon lock (roll only works with it off), `+`/`-` speed, `Esc` quit.
+Keys: `R` reset, `M` fly/orbit, `H` horizon lock (keeps the floor level; ignores roll), `+`/`-` speed, `Esc` quit.
 
 If an axis feels backwards, flip its entry in `SIGNS` at the top of `src/camera.py`.
 

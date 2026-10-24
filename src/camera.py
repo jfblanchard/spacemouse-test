@@ -38,7 +38,7 @@ class Camera:
         self.move_speed = 6.0                 # units/s at full deflection
         self.turn_speed = math.radians(90)    # rad/s at full deflection
         self.orbit = False
-        self.lock_horizon = True
+        self.lock_horizon = False  # H toggles; on = level floor, roll ignored
         self.reset()
 
     def reset(self):
