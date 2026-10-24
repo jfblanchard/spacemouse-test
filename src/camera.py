@@ -13,7 +13,7 @@ DEADZONE = 15    # ignore tiny values so the view doesn't drift at rest
 CURVE = 2.0      # >1 gives finer control near center
 
 # Per-axis sign: flip any that move the wrong way. Order: x, y, z, rx, ry, rz.
-SIGNS = (1, -1, -1, -1, -1, -1)
+SIGNS = (1, -1, -1, 1, -1, -1)
 
 HOME_POS = Vec3(10, -10, 6)
 HOME_TARGET = Vec3(0, 0, 0)
