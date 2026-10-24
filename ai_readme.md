@@ -10,7 +10,7 @@ No custom driver. The kernel's generic USB HID driver already exposes the device
 | File | Role |
 |------|------|
 | `src/axis_viewer.py` | Live terminal readout of 6 axes + buttons |
-| `91-spacemouse.rules` | udev rule granting the logged-in user read access to the device |
+| `70-spacemouse.rules` | udev rule granting the logged-in user read access to the device |
 
 ## How to run
 ```
@@ -19,7 +19,7 @@ No custom driver. The kernel's generic USB HID driver already exposes the device
 Env: mamba `spacemouse` (Python 3.12, evdev 2.0.0).
 
 ## Gotchas
-- Device node is `root:input 0660`; `jon` isn't in `input`. Needs the udev rule installed (see header of `91-spacemouse.rules`) or the viewer fails with `Permission denied`.
+- Device node is `root:input 0660`; `jon` isn't in `input`. Needs the udev rule installed (see header of `70-spacemouse.rules`) or the viewer fails with `Permission denied`.
 - The `eventN` number can change between plugs; the viewer finds the device by name, so that's fine. Stable path: `/dev/input/by-id/usb-3Dconnexion_SpaceMouse_Compact-event-if00`.
 - Device is USB `256f:c635`.
 
