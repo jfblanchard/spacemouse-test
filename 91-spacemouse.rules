@@ -1,0 +1,8 @@
+# 3Dconnexion SpaceMouse Compact (idVendor 256f, idProduct c635)
+# uaccess grants device access to the user logged into the console seat —
+# no `input` group membership or logout required.
+# Apply with:
+#   sudo cp /mnt/data/hobby/spacemouse/91-spacemouse.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules && sudo udevadm trigger
+KERNEL=="event*", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c635", \
+  TAG+="uaccess", TAG+="udev-acl"
