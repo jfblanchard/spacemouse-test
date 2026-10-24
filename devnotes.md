@@ -16,3 +16,6 @@
 - Built grid_viewer.py + camera.py + spacemouse.py. Z-up world, red X / green Y axes, grid snaps to camera in 10-unit steps so it feels infinite, distance fade.
 - Controls: fly (move along view, horizon lock default) and orbit (pivot where view meets floor; push/pull dollies). Left button reset, right button toggles mode. Keys R/M/H/+/-.
 - Debugged two render bugs offscreen with xvfb: label disables blending, and per-vertex fade distance on 200-unit lines.
+- Renamed to spacemouse-test (folder + GitHub repo, private). docs/ untracked and stripped from history; personal logs now in global gitignore.
+- Pitch sign flipped: pulling the puck back now pitches the view up (flight-stick feel).
+- Roll is ignored while horizon lock is on (default); H toggles it.
