@@ -1,3 +1,3 @@
 # Resume
 
-next: pick from todo.md "Next". Quickest wins: dominant-axis option, then ring course. Blender/FreeCAD needs spacenavd installed first.
+next: play src/ring_course.py with the puck and tune levels/FLY_SPEED. Then Godot rev 2 (own repo, reuse levels/*.json). Other ideas in todo.md.

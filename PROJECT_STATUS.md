@@ -2,15 +2,17 @@
 
 - **Generated:** 2026-10-24 (by project_status.py — git-derived, not hand-edited)
 - **Repo:** /mnt/data/hobby/spacemouse-test
-- **Git:** branch `main`, 9 commits, 2 changed/untracked, ahead 0, behind 0
-- **Last commit:** `dac9103` 2026-10-24 — Default horizon lock off so roll works
+- **Git:** branch `main`, 11 commits, 1 changed/untracked, ahead 0, behind 0
+- **Last commit:** `b3c59e0` 2026-10-24 — Add ring course practice game with levels and best times
 
 ## RESUME HERE
 
-> next: pick from todo.md "Next". Quickest wins: dominant-axis option, then ring course. Blender/FreeCAD needs spacenavd installed first.
+> next: play src/ring_course.py with the puck and tune levels/FLY_SPEED. Then Godot rev 2 (own repo, reuse levels/*.json). Other ideas in todo.md.
 
 ## RECENT COMMITS (newest first)
 
+- `b3c59e0` (2026-10-24) Add ring course practice game with levels and best times
+- `e125aea` (2026-10-24) Session wrap: todo ideas, status, resume
 - `dac9103` (2026-10-24) Default horizon lock off so roll works
 - `eae4b09` (2026-10-24) Add mouse mode and README
 - `bb3f225` (2026-10-24) Note rename, pitch flip, roll behavior
@@ -23,6 +25,7 @@
 
 ## STATUS DOCS (on disk; freshest edit wins)
 
+- `PROJECT_STATUS.md` last modified 2026-10-24
 - `README.md` last modified 2026-10-24
 - `RESUME.md` last modified 2026-10-24
 
