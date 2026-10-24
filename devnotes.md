@@ -12,3 +12,7 @@
 - Moved with bare mv before safe-move policy existed; `safe-move scan` shows only historical log references to the old path.
 - Viewer confirmed working on hardware. Device reports EV_REL axes 0-5 (no absinfo, so no declared min/max), buttons 256/257, one LED. Jon sees ~300 at full deflection; 3Dconnexion nominal is ±350.
 - Renamed axis_viewer.py -> src/cli_axis_viewer.py.
+- Chose pyglet over moderngl (one dependency, camera math stays ours). Skipped numpy to save bandwidth.
+- Built grid_viewer.py + camera.py + spacemouse.py. Z-up world, red X / green Y axes, grid snaps to camera in 10-unit steps so it feels infinite, distance fade.
+- Controls: fly (move along view, horizon lock default) and orbit (pivot where view meets floor; push/pull dollies). Left button reset, right button toggles mode. Keys R/M/H/+/-.
+- Debugged two render bugs offscreen with xvfb: label disables blending, and per-vertex fade distance on 200-unit lines.
