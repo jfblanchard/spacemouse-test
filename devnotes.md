@@ -21,3 +21,5 @@
 - Roll is ignored while horizon lock is on; H toggles it.
 - Added mouse_mode.py (uinput virtual mouse, foreground, Ctrl+C off) and README with screenshot + SVG axis diagram.
 - Horizon lock now defaults off so roll works out of the box (Jon expected roll about the view axis). Verified: roll rotates up 90 deg/s about fwd, fwd unchanged.
+- Ring course v1 (src/ring_course.py): subclass of GridViewer, torus mesh with simple lighting and depth test, pass check = segment crosses ring plane inside the hole (either direction), only the current target counts. 3 JSON levels (straight, slalom, spiral climb). Fixed FLY_SPEED 8 for fair times. Verified with scripted runs under xvfb: L1 full throttle = 9.00 s (72 units / 8).
+- Godot rev 2 planned as its own repo, reusing levels/*.json.

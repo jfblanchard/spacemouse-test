@@ -73,12 +73,12 @@ def axis_lines():
 
 
 class GridViewer(pyglet.window.Window):
-    def __init__(self, mouse):
+    def __init__(self, mouse, title="SpaceMouse grid"):
         try:
-            config = pyglet.gl.Config(sample_buffers=1, samples=4, double_buffer=True)
-            super().__init__(1280, 800, "SpaceMouse grid", resizable=True, config=config)
+            config = pyglet.gl.Config(sample_buffers=1, samples=4, depth_size=24, double_buffer=True)
+            super().__init__(1280, 800, title, resizable=True, config=config)
         except pyglet.window.NoSuchConfigException:
-            super().__init__(1280, 800, "SpaceMouse grid", resizable=True)
+            super().__init__(1280, 800, title, resizable=True)
         self.mouse = mouse
         self.cam = Camera()
         self.program = ShaderProgram(Shader(VERT, "vertex"), Shader(FRAG, "fragment"))
@@ -136,8 +136,12 @@ class GridViewer(pyglet.window.Window):
         self.axes.draw(GL_LINES)
         prog.stop()
 
+        self.draw_extra(proj @ view)
         self.hud.text = self.hud_text()
         self.hud.draw()
+
+    def draw_extra(self, view_proj):
+        """Hook for subclasses: draw more 3D content after the grid."""
 
     def hud_text(self):
         cam, m = self.cam, self.mouse

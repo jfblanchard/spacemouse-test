@@ -42,11 +42,15 @@ class Camera:
         self.reset()
 
     def reset(self):
-        self.pos = HOME_POS
-        self.fwd = (HOME_TARGET - HOME_POS).normalize()
-        self._rebuild_basis(WORLD_UP)
+        self.set_pose(HOME_POS, HOME_TARGET - HOME_POS)
         self.pivot = HOME_TARGET
         self.dist = (HOME_TARGET - HOME_POS).length()
+
+    def set_pose(self, pos, look_dir):
+        """Place the camera at pos looking along look_dir, horizon level."""
+        self.pos = pos
+        self.fwd = look_dir.normalize()
+        self._rebuild_basis(WORLD_UP)
 
     def _rebuild_basis(self, up_hint):
         """Re-orthonormalize right/up from fwd, keeping up close to up_hint."""

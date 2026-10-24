@@ -14,6 +14,7 @@ No custom driver. The kernel's generic USB HID driver already exposes the device
 | `src/camera.py` | Camera math (no GL): axis shaping, sign table, fly/orbit, horizon lock |
 | `src/spacemouse.py` | Non-blocking evdev reader, polled once per frame |
 | `src/mouse_mode.py` | Virtual mouse via uinput: slide = cursor, twist = scroll, buttons = clicks |
+| `src/ring_course.py`, `levels/` | Ring practice game; subclasses GridViewer via `draw_extra` hook. Scores in gitignored `scores.json` |
 | `README.md`, `media/` | Human-facing readme, grid screenshot, axis diagram (SVG) |
 | `70-spacemouse.rules` | udev rule granting the logged-in user read access to the device |
 
@@ -32,6 +33,7 @@ Env: mamba `spacemouse` (Python 3.12, evdev 2.0.0, pyglet 2.1.19). No numpy, by 
 - pyglet's text drawing disables GL_BLEND afterwards; re-enable it every frame before drawing.
 - Grid fade must be computed per pixel (long lines make per-vertex distance wrong).
 - uinput write access comes from Steam's `60-steam-input.rules`, not our rule. evdev's UInput tries to open the new (root-only) event node and stalls ~2 s; `WriteOnlyUInput` skips that.
+- Screenshots under xvfb must be taken from inside `pyglet.app.run()` (scheduled callback); dispatching on_draw outside the loop gives black frames.
 - Headless render check: `xvfb-run` works with pyglet + Mesa.
 
 ## Current status
