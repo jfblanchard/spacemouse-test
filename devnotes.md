@@ -10,3 +10,5 @@
 - Decision: read evdev directly, no spacenavd.
 - Rule installed as 91-spacemouse.rules: tag applied, no ACL. Cause: uaccess is processed in 73-seat-late.rules, so the rule must sort before it. Renamed to 70-spacemouse.rules.
 - Moved with bare mv before safe-move policy existed; `safe-move scan` shows only historical log references to the old path.
+- Viewer confirmed working on hardware. Device reports EV_REL axes 0-5 (no absinfo, so no declared min/max), buttons 256/257, one LED. Jon sees ~300 at full deflection; 3Dconnexion nominal is ±350.
+- Renamed axis_viewer.py -> src/cli_axis_viewer.py.

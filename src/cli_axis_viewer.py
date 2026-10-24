@@ -3,7 +3,7 @@
 
 Reads the device straight from Linux input events (no spacenavd needed).
 Setup:  pip install evdev   (or: sudo apt install python3-evdev)
-Run:    python3 axis_viewer.py
+Run:    python3 cli_axis_viewer.py
 If it says permission denied, run with sudo once to test, or add a udev rule.
 """
 import sys

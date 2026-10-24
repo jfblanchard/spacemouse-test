@@ -9,12 +9,12 @@ No custom driver. The kernel's generic USB HID driver already exposes the device
 ## Key files
 | File | Role |
 |------|------|
-| `src/axis_viewer.py` | Live terminal readout of 6 axes + buttons |
+| `src/cli_axis_viewer.py` | Live terminal readout of 6 axes + buttons |
 | `70-spacemouse.rules` | udev rule granting the logged-in user read access to the device |
 
 ## How to run
 ```
-/home/jon/mambaforge/envs/spacemouse/bin/python src/axis_viewer.py
+/home/jon/mambaforge/envs/spacemouse/bin/python src/cli_axis_viewer.py
 ```
 Env: mamba `spacemouse` (Python 3.12, evdev 2.0.0).
 
@@ -24,4 +24,4 @@ Env: mamba `spacemouse` (Python 3.12, evdev 2.0.0).
 - Device is USB `256f:c635`.
 
 ## Current status
-Axis viewer written, untested on hardware pending the udev rule. Grid viewer not started.
+CLI axis viewer works: all 6 axes + buttons read live (2026-10-24). Grid viewer not started.
