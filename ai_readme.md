@@ -1,7 +1,7 @@
-# SpaceMouse
+# spacemouse-test
 
 ## What this is
-Hobby project to learn a 3Dconnexion SpaceMouse Compact on Linux. Step one: read the six axes live. Step two: a Blender-style grid you can fly around with the puck. Later: custom tools.
+Test bed for a small reusable SpaceMouse library (`src/spacemouse.py`, `src/camera.py`). Hobby project to learn a 3Dconnexion SpaceMouse Compact on Linux. Step one: read the six axes live. Step two: a Blender-style grid you can fly around with the puck. Later: custom tools.
 
 ## Architecture
 No custom driver. The kernel's generic USB HID driver already exposes the device as a standard input device (`/dev/input/eventN`). We read those events directly with `python-evdev`. `spacenavd` (the FreeSpacenav daemon) is not used; it's only needed for apps that speak its protocol (Blender, FreeCAD).

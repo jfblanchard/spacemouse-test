@@ -4,7 +4,7 @@
 # Must sort BEFORE 73-seat-late.rules: that is where the uaccess tag is
 # turned into a user ACL. A 9x-numbered rule tags the device too late.
 # Apply with:
-#   sudo cp /mnt/data/hobby/spacemouse/70-spacemouse.rules /etc/udev/rules.d/
+#   sudo cp /mnt/data/hobby/spacemouse-test/70-spacemouse.rules /etc/udev/rules.d/
 #   sudo udevadm control --reload-rules && sudo udevadm trigger
 KERNEL=="event*", ATTRS{idVendor}=="256f", ATTRS{idProduct}=="c635", \
   TAG+="uaccess", TAG+="udev-acl"
