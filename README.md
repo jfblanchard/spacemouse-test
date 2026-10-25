@@ -4,8 +4,6 @@ Experiments with a [3Dconnexion SpaceMouse Compact](https://3dconnexion.com/us/p
 
 It's a test bed for a small reusable library, with a terminal axis readout and a ring-flying game for practicing navigation.
 
-![Grid viewer](media/grid_viewer.png)
-
 ## The puck
 
 Six axes (three slides, three rotations) and two buttons:
@@ -52,6 +50,9 @@ The terminal readout is the quickest check that everything works: each axis gets
 ![Terminal axis readout](media/cli_axis_viewer.png)
 
 ### Grid viewer
+
+
+![Grid viewer](media/grid_viewer.png)
 
 | Input | Fly mode | Orbit mode |
 |-------|----------|------------|
