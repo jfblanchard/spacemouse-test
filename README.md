@@ -1,8 +1,8 @@
 # spacemouse-test
 
-Playing with a 3Dconnexion SpaceMouse Compact on Linux, in plain Python. No drivers, no `spacenavd`: the kernel already exposes the puck as an input device, and this reads it directly.
+Experiments with a 3Dconnexion SpaceMouse Compact on Linux, in Python. This doesn't use drivers or `spacenavd`: the kernel already exposes the puck as an input device, and this reads it directly.
 
-It's a test bed for a small reusable library, plus a couple of toys built on it.
+This was created as a test bed for a small reusable library, a shell terminal test script, and also a basic game to practice navigation using the spacemouse by flying through rings.
 
 ![Grid viewer](media/grid_viewer.png)
 
