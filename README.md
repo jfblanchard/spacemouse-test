@@ -52,8 +52,6 @@ The terminal readout is the quickest check that everything works: each axis gets
 ### Grid viewer
 
 
-![Grid viewer](media/grid_viewer.png)
-
 | Input | Fly mode | Orbit mode |
 |-------|----------|------------|
 | Slide left / right | Strafe | Pan sideways |
@@ -64,6 +62,8 @@ The terminal readout is the quickest check that everything works: each axis gets
 | Right button | Switch to orbit | Switch to fly |
 
 Keys: `R` reset, `M` fly/orbit, `H` horizon lock (keeps the floor level; ignores roll), `+`/`-` speed, `Esc` quit.
+
+![Grid viewer](media/grid_viewer.png)
 
 If an axis feels backwards, flip its entry in `SIGNS` at the top of `src/camera.py`.
 
