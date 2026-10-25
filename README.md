@@ -67,10 +67,6 @@ Keys: `R` reset, `M` fly/orbit, `H` horizon lock (keeps the floor level; ignores
 
 If an axis feels backwards, flip its entry in `SIGNS` at the top of `src/camera.py`.
 
-### Mouse mode
-
-Use it as your mouse!  Slide moves the cursor, twist scrolls, the buttons are left and right click. It creates a virtual mouse through `/dev/uinput`, so it works in any app. Needs write access to `/dev/uinput`; Steam's udev rules already grant it, otherwise add a `uaccess` rule for it.
-
 ### Practice Course
 
 ![Ring course](media/ring_course.png)
@@ -80,6 +76,15 @@ Fly through the rings in order. The orange one is next; if it's off screen, an a
 Left button restarts, right button skips to the next level. Keys: `R` restart, `N` next, `1`-`9` pick a level, `H` horizon lock.
 
 Levels are plain JSON: a start pose and a list of rings (`pos`, `radius`, optional `normal`; by default each ring faces the previous one). Drop a new file in `levels/` and it shows up.
+
+
+
+### Mouse mode
+
+Use it as your mouse! It creates a virtual mouse through `/dev/uinput`, so it works in any app. Needs write access to `/dev/uinput`; Steam's udev rules already grant it, otherwise add a `uaccess` rule for it.
+
+* Abitilty to slide to move the cursor, twist scrolls, the buttons are left and right click. 
+
 
 ## Using it from other code
 
