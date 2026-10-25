@@ -68,13 +68,13 @@ If an axis feels backwards, flip its entry in `SIGNS` at the top of `src/camera.
 
 ### Mouse mode
 
-Slide moves the cursor, twist scrolls, the buttons are left and right click. It creates a virtual mouse through `/dev/uinput`, so it works in any app. Needs write access to `/dev/uinput`; Steam's udev rules already grant it, otherwise add a `uaccess` rule for it.
+Use it as your mouse!  Slide moves the cursor, twist scrolls, the buttons are left and right click. It creates a virtual mouse through `/dev/uinput`, so it works in any app. Needs write access to `/dev/uinput`; Steam's udev rules already grant it, otherwise add a `uaccess` rule for it.
 
-### Ring course
+### Practice Course
 
 ![Ring course](media/ring_course.png)
 
-Fly through the rings in order. The orange one is next; if it's off screen, an arrow points the way. The timer starts on your first move, and your best time per level is saved to `scores.json` (local only). Flight speed is fixed so times are comparable.
+Fly through the rings in order. The orange one is next; if it's off screen, an arrow points the way. The timer starts on your first move, and your best time per level is saved to `scores.json` (local only). 
 
 Left button restarts, right button skips to the next level. Keys: `R` restart, `N` next, `1`-`9` pick a level, `H` horizon lock.
 
