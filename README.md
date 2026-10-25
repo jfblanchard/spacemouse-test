@@ -49,7 +49,7 @@ python src/ring_course.py       # ring course practice game
 
 The terminal readout is the quickest check that everything works: each axis gets a bar that moves as you push the puck.
 
-![Terminal axis readout](media/cli_axis_viewer.svg)
+![Terminal axis readout](media/cli_axis_viewer.png)
 
 ### Grid viewer
 

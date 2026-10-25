@@ -2,8 +2,8 @@
 
 - **Generated:** 2026-10-25 (by project_status.py — git-derived, not hand-edited)
 - **Repo:** /mnt/data/hobby/spacemouse-test
-- **Git:** branch `main`, 14 commits, 2 changed/untracked, ahead 0, behind 0
-- **Last commit:** `34fbcf3` 2026-10-25 — Add MIT license, drop machine paths, tighten README intro
+- **Git:** branch `main`, 15 commits, 3 changed/untracked, ahead 0, behind 0
+- **Last commit:** `6adad79` 2026-10-25 — README: product link and terminal readout image
 
 ## RESUME HERE
 
@@ -11,6 +11,7 @@
 
 ## RECENT COMMITS (newest first)
 
+- `6adad79` (2026-10-24) README: product link and terminal readout image
 - `34fbcf3` (2026-10-24) Add MIT license, drop machine paths, tighten README intro
 - `bf4f814` (2026-10-24) Revise README
 - `2a2b67c` (2026-10-24) Update status and resume
@@ -22,7 +23,6 @@
 - `bccf5c0` (2026-10-24) Rename project to spacemouse-test
 - `73ac40a` (2026-10-24) Pull back now pitches up; stop tracking docs/
 - `2cc097b` (2026-10-24) Add pyglet grid viewer with fly/orbit camera
-- `34db1eb` (2026-10-24) Rename axis viewer to cli_axis_viewer, record working status
 
 ## STATUS DOCS (on disk; freshest edit wins)
 
