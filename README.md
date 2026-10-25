@@ -1,6 +1,6 @@
 # spacemouse-test
 
-Experiments with a 3Dconnexion SpaceMouse Compact on Linux, in Python. This doesn't use drivers or `spacenavd`: the kernel already exposes the puck as an input device, and this reads it directly.
+Experiments with a [3Dconnexion SpaceMouse Compact](https://3dconnexion.com/us/product/spacemouse-compact/) on Linux, in Python. This doesn't use drivers or `spacenavd`: the kernel already exposes the puck as an input device, and this reads it directly.
 
 It's a test bed for a small reusable library, with a terminal axis readout and a ring-flying game for practicing navigation.
 
@@ -46,6 +46,10 @@ python src/grid_viewer.py       # 3D grid
 python src/mouse_mode.py        # mouse mode, Ctrl+C to stop
 python src/ring_course.py       # ring course practice game
 ```
+
+The terminal readout is the quickest check that everything works: each axis gets a bar that moves as you push the puck.
+
+![Terminal axis readout](media/cli_axis_viewer.svg)
 
 ### Grid viewer
 
