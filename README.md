@@ -49,7 +49,7 @@ The terminal readout is the quickest check that everything works: each axis gets
 
 ![Terminal axis readout](media/cli_axis_viewer.png)
 
-### Grid viewer
+### Grid viewer - Practice moving around
 
 
 | Input | Fly mode | Orbit mode |
