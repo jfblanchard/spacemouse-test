@@ -2,7 +2,7 @@
 
 Experiments with a 3Dconnexion SpaceMouse Compact on Linux, in Python. This doesn't use drivers or `spacenavd`: the kernel already exposes the puck as an input device, and this reads it directly.
 
-This was created as a test bed for a small reusable library, a shell terminal test script, and also a basic game to practice navigation using the spacemouse by flying through rings.
+It's a test bed for a small reusable library, with a terminal axis readout and a ring-flying game for practicing navigation.
 
 ![Grid viewer](media/grid_viewer.png)
 
@@ -88,3 +88,7 @@ while True:
 ```
 
 Raw values run about ±350. `camera.shape()` maps them to -1..1 with a deadzone.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

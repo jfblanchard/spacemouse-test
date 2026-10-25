@@ -1,9 +1,9 @@
 # spacemouse-test — status
 
-- **Generated:** 2026-10-24 (by project_status.py — git-derived, not hand-edited)
+- **Generated:** 2026-10-25 (by project_status.py — git-derived, not hand-edited)
 - **Repo:** /mnt/data/hobby/spacemouse-test
-- **Git:** branch `main`, 11 commits, 1 changed/untracked, ahead 0, behind 0
-- **Last commit:** `b3c59e0` 2026-10-24 — Add ring course practice game with levels and best times
+- **Git:** branch `main`, 13 commits, 5 changed/untracked, ahead 0, behind 0
+- **Last commit:** `bf4f814` 2026-10-25 — Revise README
 
 ## RESUME HERE
 
@@ -11,6 +11,8 @@
 
 ## RECENT COMMITS (newest first)
 
+- `bf4f814` (2026-10-24) Revise README
+- `2a2b67c` (2026-10-24) Update status and resume
 - `b3c59e0` (2026-10-24) Add ring course practice game with levels and best times
 - `e125aea` (2026-10-24) Session wrap: todo ideas, status, resume
 - `dac9103` (2026-10-24) Default horizon lock off so roll works
@@ -21,12 +23,11 @@
 - `2cc097b` (2026-10-24) Add pyglet grid viewer with fly/orbit camera
 - `34db1eb` (2026-10-24) Rename axis viewer to cli_axis_viewer, record working status
 - `bef6e4d` (2026-10-24) Renumber udev rule to 70 so uaccess ACL applies
-- `15185c8` (2026-10-24) Initial spacemouse project: axis viewer, udev rule, project docs
 
 ## STATUS DOCS (on disk; freshest edit wins)
 
+- `README.md` last modified 2026-10-25
 - `PROJECT_STATUS.md` last modified 2026-10-24
-- `README.md` last modified 2026-10-24
 - `RESUME.md` last modified 2026-10-24
 
 ## CAVEAT
